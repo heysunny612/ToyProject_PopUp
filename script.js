@@ -133,7 +133,7 @@ $containerModal.addEventListener('click', (event) => {
   const target = event.target;
   if (!(target.tagName === 'IMG')) return;
   const imgId = String(target.dataset.id);
-  const [_, id] = imgId.split('-');
+  const [, id] = imgId.split('-');
   toggleOpenModal();
   const $modalWrapDOM = showModalDOM(id);
   $modal.appendChild($modalWrapDOM);
